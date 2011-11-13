@@ -1,0 +1,44 @@
+.______________________________________________________________________________.
+ 
+   nnnn,       oooooooooo  mmmmmmmmmmmmm  uuuu  uuuu  uuuu  uuuu  ssssssssss
+   nnnnnnnnnn  oooo``oooo  mmm` mmm` mmm  uuuu  ....  uuuu  ....  ssss `ssss
+   nnnnnnnnnn  oooo  oooo  mmm  mmm  mmm  uuuu  uuuu  uuuu  uuuu  ssss  ````
+   nnnn``nnnn  oooo  oooo  mmm  mmm  mmm  uuuu  uuuu  uuuu  uuuu  ssssssssss
+   nnnn  nnnn  oooo  oooo  mmm  mmm  mmm  uuuu  uuuu  uuuu  uuuu  .... `ssss
+   nnnn  nnnn  oooo  oooo  mmm  mmm  mmm  uuuu  uuuu  uuuu  uuuu  ssss  ssss
+   nnnn  nnnn  oooo  oooo  mmm  mmm  mmm  uuuu  uuuu  uuuu  uuuu  ssss  ssss
+   nnnn  nnnn  oooo  oooo  mmm  mmm  mmm  uuuu  uuuu  uuuu  uuuu  ssss  ssss
+   nnnn  nnnn  oooo  oooo  mmm  mmm  mmm  uuuu  uuuu  uuuu  uuuu  ssss  ssss
+   nnnn  ....  oooo  oooo  mmm  mmm  mmm  uuuu..uuuu  uuuu..uuuu  ssss  ssss
+   nnnn  nnnn  oooo..oooo  mmm  mmm  ...  uuuuuuuuuu  uuuuuuuuuu  ssss..ssss
+   nnnn  nnnn  oooooooooo  mmm  mmm  mmm  ```` `uuuu  ```` `uuuu  ssssssssss
+                            ._________________________________________________.
+____________________________|                                                 |_
+---:| 2010-07-01 |======::::| Obfuscare                                       |:
+                            |_________________________________________________|
+                            `                                    `-[ Python ]-`
+
+This script was written in a mere night in order to provide simple yet effective
+means of obfuscating a plain-text file.  After sitting unused for several months
+it was decided that it should be slightly reworked into a usable tool.  In the 
+current design it will take a user-supplied plain-text file and map the letters
+to a pseudorandom buffer of obfuscated text or map to a user-supplied key file.
+Once the characters have been mapped, a pseudorandom list of corresponding
+indices is output.
+
+The concept itself closely resembles that of codebooks.  Once generated, the
+indices or key text (obfuscated text) can be separately stored then reassembled
+using a loader tool.  The interesting aspect is that the key text can be any
+plain-text file so long as it has all corresponding characters.  Without the
+indices the original text cannot be recovered and the file appears normal; the
+same can be applied to having the indices but not having the original key
+obfuscation text.
+
+Although Obfuscare is not a fully fleshed out tool and the concept itself is by
+no means new, it can provide a subtle way of distributing information or hiding
+it in plain sight.
+
+
+---=:[ Credits ]::---==========================================================-
+
++ Nomuus header logo derived from Phr33's nfo design and modified by nomuus.
