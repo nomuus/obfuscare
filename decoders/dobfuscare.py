@@ -4,6 +4,8 @@
 # -------------------------------------------------------[ Revision History ]----
 # username/YYYY-MM-DD/version    /
 # -------------------------------
+# nomuus/2011-11-12/0.0.501.2
+#     - Removed example generation code.
 # nomuus/2011-11-12/0.0.501.1
 #     - Public beta release.
 # nomuus/2010-07-01/0.0.0.1
@@ -19,7 +21,7 @@ from re import compile, search
 
 ###########################################################################
 
-__version__ = "0.0.501.1"
+__version__ = "0.0.501.2"
 __status__ = "BETA"
 __author__ = "nomuus"
 __copyright__ = """Copyright (c) 2010-2011, nomuus. All rights reserved.
@@ -96,8 +98,7 @@ def main(argv):
         obdata = tmp
     else:
         obdata = b64decode(tmp)
-    with open('example2_obfuscated.txt', 'w') as f:
-        f.write(obdata)
+
     if not obdata:
         stderr.write("Error parsing %s.\n" % obfile)
         sys.exit(-2)
