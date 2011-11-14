@@ -1,0 +1,3 @@
+# See obfuscare/decoders/examples for decoding
+$ obfuscare.py example.txt -n 5 > example_output.txt
+$ obfuscare.py example.txt -k example2_keyfile_codebook.txt > example2_output.txt

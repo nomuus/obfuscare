@@ -1,0 +1,48 @@
+# http://en.wikipedia.org/wiki/Codebook
+
+Codebook
+From Wikipedia, the free encyclopedia
+
+This article does not cite any references or sources. Please help improve this article by adding citations to reliable sources. Unsourced material may be challenged and removed. (August 2009)
+
+
+A codebook is a type of document used for gathering and storing codes. Originally codebooks were often literally books, but today codebook is a byword for the complete record of a series of codes, regardless of physical format.
+
+Contents
+1 Cryptography
+2 Social sciences
+3 Data compression
+4 See also
+
+Cryptography
+In cryptography, a codebook is a document used for implementing a code. A codebook contains a lookup table for coding and decoding; each word or phrase has one or more strings which replace it. To decipher messages written in code, corresponding copies of the codebook must be available at either end. The distribution and physical security of codebooks presents a special difficulty in the use of codes, compared to the secret information used in ciphers, the key, which is typically much shorter.
+
+The United States National Security Agency documents sometimes use codebook to refer to block ciphers; compare their use of combiner-type algorithm to refer to stream ciphers.
+A codebook is usually made in two parts, one part being for converting plaintext to ciphertext, the other for the opposite purpose. Both are usually organized similar to a standard dictionary, with plaintext words (in the first part) and ciphertext words (in the second part) presented like dictionary headwords.
+An example of an algorithm using a codebook is the MacGuffin cipher.
+
+Social sciences
+In social sciences, a codebook is a document containing list of codes used in research.
+
+Data compression
+Codebooks were also used in 19th- and 20th-century commercial codes for the non-cryptographic purpose of data compression.
+
+See also
+Block cipher modes of operation <http://en.wikipedia.org/wiki/Block_cipher_modes_of_operation>
+The Code Book <http://en.wikipedia.org/wiki/The_Code_Book>
+
+0flq6pObgUtI
+irnGjYcUENs2MWYVQtmv5HEUEZVapAi
+CbgNA
+h1uBnN9A26cDwzOJEFfk
+JJL3QimGzl8nYEPnC6ykhq7rRQghJODPnf43BVdFB1OPOSNWKe6
+j805zS9wiEWX6L3eYmI56RbSJYX0m1rQZm5XetQ1HQUP8nwuxdSST8FQeBuB5SmkCWgzIQtEVL8cuEN4cfvxastq
+3qI5ejlcSvG39wp
+pWNPog9jP6cBLq9ueFJ2NK81
+cB9lKhoIgIqcmnv5u1bdKFyiepJAZN7tYSfp8bb30Y
+NaPZBvuvtrk3w8YvG2fAfXd5zorwQ5vvKUM77YqMRbJjucxM0PZIsq3M8S0z
+3YWtG3OmHO4ni52n5dBK9vHX1
+1bZLGLZoUSFUGHoDHMBB38nDyJKHKpzalPx7hyoXDhQHPEF1RQLBoC76cevx2RjY3urP3UTfvfFkvOXn7fg581tOg2TzknyLqwMsAykEaN8JNMNAlgpcUN
+ALWrYBQQdlWvt2VoHb9AilgC4flZ0mMMN2QyCiqh5u5wYPMoXOG40724UAAr2JUuAwzGSHA6ObRm9LCIIHmbnqbZm10nFNhEXgt3lL2lINzkpJASlm3wp
+cSueyXiFT
+5aRABzifUwMOS6wMrDfahGpA2Z4Yabcd5ucsNjI1P51zkysDgdQQYau0sJJf2goQUBUYwlWtt1omDzRHrtoEzMv5Eczqc2LulcH71s7BELR50LaKa1kagMl0eiGS4rHjCWsJLvwCZRHEIbDPNakZ9Vefd8HMRaX889zNkBTU73QtvYejjNCLFzn

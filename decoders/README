@@ -1,1 +1,3 @@
-TODO(nomuus): Add mapping decoders.
+# See obfuscare/examples for encoding
+$ dobfuscare.py example_obfuscated.txt example_indices.txt
+$ dobfuscare.py example2_obfuscated-base64.txt example2_indices.txt

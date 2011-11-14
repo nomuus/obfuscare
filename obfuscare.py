@@ -6,6 +6,8 @@
 # -------------------------------------------------------[ Revision History ]----
 # username/YYYY-MM-DD/version    /
 # -------------------------------
+# nomuus/2011-11-12/0.0.501.1
+#     - Minor fixes.
 # nomuus/2011-11-12/0.0.500.1
 #     - Public beta release.
 # nomuus/2011-10-10/0.0.467.3
@@ -27,7 +29,7 @@ from time import strftime, localtime
 
 ###########################################################################
 
-__version__ = "0.0.500.1"
+__version__ = "0.0.501.1"
 __status__ = "BETA"
 __author__ = "nomuus"
 __copyright__ = """Copyright (c) 2010-2011, nomuus. All rights reserved.
@@ -114,7 +116,7 @@ def obfuscate(text):
         If not a string, then a blank string, "", is returned.
     """
     
-    if not isinstance(file, basestring):
+    if not isinstance(text, basestring):
         return ""
     
     filler = FILLER
@@ -225,13 +227,14 @@ def usage():
     stdout.write("%s myfile.txt > myfile_output.txt\n" % f)
     stdout.write("%s myfile.txt -n 5 > myfile_output.txt\n" % f)
     stdout.write("%s myfile.txt -n 2 -k bill_of_rights.txt > myfile_output.txt\n" % f)
-    stdout.write("%s myfile.txt -k bible.txt > myfile_output.txt\n" % f)
+    stdout.write("%s myfile.txt --code-book bible.txt > myfile_output.txt\n" % f)
 
 ###########################################################################
 
 def banner():
     stdout.write("Generated with Obfuscare %s\n" % __version__)
-    stdout.write("%s\n" % __copyright__)
+    copyright = __copyright__.split('\n')[0].rstrip("\r\n")
+    stdout.write("%s\n" % copyright)
     stdout.write("www.nomuus.com\n\n\n")
     stdout.write("YYYYmmddHHMMSS - %s\n" % strftime("%Y%m%d%H%M%S", localtime()))
 
@@ -245,6 +248,10 @@ def arg_parser(args):
         stderr.write("Input file does not exist.\n")
         sys.exit(2)
     del args[0:2]
+    
+    if not args:
+        kwargs["mappings"] = 1
+        return kwargs
     
     arg_num = ""
     arg_ob = ""
